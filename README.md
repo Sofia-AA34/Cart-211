@@ -1,6 +1,6 @@
 # Assessment 2
 
-[View this project online](https://sofia-aa34.github.io/Cart-211/assessment2/index.html)
+[View this project online](https://sofia-aa34.github.io/Cart-211/assessment2/web2.html)
 
 # Assessment 3
 
