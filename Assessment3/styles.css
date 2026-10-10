@@ -138,7 +138,7 @@ footer {
         color: white;
     }
 
-    .wrapper {
+    #wrapper {
         margin-top: 500px;
         position: relative;
         width: 90%;
@@ -151,12 +151,12 @@ footer {
         text-align: justify;
     }
 
-    .book {
+    .books {
         grid-template-columns: auto auto;
         gap: 16px;
     }
 
-    .book figcaption {
+    .books figcaption {
         font-size: smaller;
     }
 }
