@@ -139,12 +139,12 @@ footer {
     }
 
     #wrapper {
-        margin-top: 500px;
         position: relative;
         width: 90%;
         margin: 0 auto;
         float: none;
         line-height: 150%;
+        margin-left: 0;
     }
 
     main {
