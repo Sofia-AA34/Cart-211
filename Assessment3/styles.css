@@ -128,9 +128,9 @@ footer {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background: #000;
+        background: #080e4b;
         z-index: 1000;
-        color: white;
+        color: rgb(132, 197, 207);
         float: none;
     }
 
