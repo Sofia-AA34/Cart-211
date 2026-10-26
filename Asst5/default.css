@@ -17,10 +17,6 @@ body {
     align-items: center;
 }
 
-.menu1 {
-    display: block;
-}
-
 /* MAIN CONTENT AND HEADINGS*/
 #wrapper {
     width: 90%;
@@ -91,7 +87,7 @@ section {
 }
 
 /* add extra space below the final paragraph*/
-article p: last-child {
+article p:last-child {
     margin-bottom: 80px;
 }
 
@@ -123,6 +119,10 @@ footer a {
     gap: 0;
     margin: 0;
     padding: 0;
+}
+
+figure {
+    margin: 0;
 }
 
 .im {
@@ -195,19 +195,19 @@ large rect on the left*/
     grid-row: 5 / 7;
 }
 
-/*Image 8*: beside image 7/
+/*Image 8: beside image 7*/
 .im8 {
     /*span last 3 columns*/
-grid-column: 10 / 13;
-/* align with image 7*/
-grid-row: 5 / 7;
+    grid-column: 10 / 13;
+    /* align with image 7*/
+    grid-row: 5 / 7;
 }
 
 /*Image 9: below image 7
 large rect on the left*/
 .im9 {
     /*use the same column as image 7*/
-    grid-column: 10 / 13;
+    grid-column: 7 / 10;
     /* span rows 7 and 8*/
     grid-row: 7 / 9;
 }
@@ -222,33 +222,38 @@ large rect on the left*/
 
 /*. FINAL ROW: IMAGES 11 TO 14
 apply shared positionning to images 11 and 13*/
-.img11,
+.im11,
 .im13 {
     /*initially assigning rge first 3 columns**/
     grid-column: 1 / 4;
     /* span the final 2 rows*/
-    grid-row: 9 /1;
+    grid-row: 9 / 11;
 }
 
 /*apply shared positioning t images 12 and 14
 inirially assigninf the colors 4 through 6*/
-.img12,
+.im12,
 .im14 {
     grid-column: 4 / 7;
     /* span the final 2 rows*/
-    grid-row: 9 /11;
+    grid-row: 9 / 11;
 }
 
 /* Override the starting position for image 13*/
-.img13 {
+.im13 {
     /* place image 13 in column 7 through 9*/
     grid-column: 7 /10;
 }
 
 /* Override the starting position for image 14*/
-.img14 {
+.im14 {
     /* place image 14 in column 10 through 12*/
     grid-column: 10 / 13;
+}
+
+.im15 {
+    grid-column: 1 / 4;
+    grid-row: 11 / 13;
 }
 
 /* END OF THE DESKTOP IMAGE GRID*/
