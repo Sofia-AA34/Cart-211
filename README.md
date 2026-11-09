@@ -8,4 +8,4 @@
 
 # Assessment 5 & 6
 
-[View this project online](https://sofia-aa34.github.io/Cart-211/Asst5/stories1.html)
+[View this project online](https://sofia-aa34.github.io/Cart-211/Asst5/storie1.html)
