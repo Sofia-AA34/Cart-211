@@ -1,0 +1,213 @@
+/*Main page*/
+
+body {
+    isolation: isolate;
+    background-color: #312b50;
+    color: #eeecf3;
+    font-family: 'Alkatra';
+}
+
+body::before {
+    background-image: url("assets/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.4;
+    filter: blur(2px);
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    padding: 15px;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 25px;
+}
+
+/*Images*/
+.icons-web {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.icon {
+    position: absolute;
+}
+
+.icon img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px rgba(0, 0, 0, 1);
+    box-shadow: 0 8px 24px 8px rgba(0, 0, 0, 1);
+
+}
+
+.icon-1 {
+    left: 780px;
+    top: 300px;
+}
+
+.icon-2 {
+    left: 990px;
+    top: 140px;
+}
+
+.icon-3 {
+    left: 950px;
+    top: 520px;
+}
+
+.icon-4 {
+    left: 600px;
+    top: 590px;
+}
+
+.icon-5 {
+    left: 450px;
+    top: 300px;
+}
+
+.icon-6 {
+    left: 600px;
+    top: 0px;
+}
+
+/*Fourth page*/
+body.page_4::before {
+    display: none;
+}
+
+body.page_4 {
+    background-color: #8166bc;
+    color: #200729;
+    font-family: 'Metal';
+}
+
+.page_4 header {
+    text-align: center;
+    font-size: 25px;
+}
+
+.page_4 h1 {
+    font-size: 65px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.page_4 main {
+    max-width: 1300px;
+    margin: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.page_4 main p {
+    font-size: 35px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/*pop up thing*/
+.container {
+    position: fixed;
+    isolation: isolate;
+    width: max-content;
+    height: auto;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    margin-left: auto;
+    background-color: #220932;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: url("assets/container.jpeg");
+    opacity: 0.4;
+    filter: blur(1px);
+    inset: 0;
+}
+
+.button {
+    padding: 10px 15px;
+    width: 190px;
+    background: #e2d8ec;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.popup.show {
+    display: block;
+}
+
+.popup {
+    font-family: 'Calligraffitti';
+    width: 500px;
+    height: 400px;
+    background: url("assets/popup.jpeg");
+    border-radius: 50px;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #e5dede;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.popup.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+.popup h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 50px 0 10px;
+}
+
+.popup p {
+    font-size: 20px;
+}
+
+.popup button {
+    width: 50%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #d66a6a;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+
+}
