@@ -87,13 +87,45 @@ p {
     top: 0px;
 }
 
-/*Fourth page*/
-body.page_4::before {
+/*Page_1*/
+body.page_1::before {
     display: none;
 }
 
+body.page_1 {
+    background-color: #ffffff;
+}
+
+/*Page_2*/
+body.page_2::before {
+    display: none;
+}
+
+body.page_2 {
+    background-color: #ffffff;
+}
+
+/*Page_3*/
+body.page_3::before {
+    display: none;
+}
+
+body.page_3 {
+    background-color: #ffffff;
+}
+
+/*Fourth page*/
+body.page_4::before {
+    background: url("assets/page4.jpeg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    filter: blur(3px);
+
+}
+
 body.page_4 {
-    background-color: #8166bc;
+    background-color: #755d9c;
     color: #200729;
     font-family: 'Metal';
 }
@@ -112,16 +144,35 @@ body.page_4 {
 .page_4 main {
     max-width: 1300px;
     margin: 40px;
+    margin-top: 5px;
+    margin-bottom: 20px;
     padding: 10px;
     box-sizing: border-box;
     background-color: #fff;
 }
 
-.page_4 main p {
+.page_4 .image_1 img {
+    display: block;
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    top: 200px;
+    left: 0px;
+}
+
+.page_4 main first-paragraph {
     font-size: 35px;
     margin: 0;
     line-height: 1.2;
 }
+
+.page_4 main second-paragraph {
+    font-size: 35px;
+    margin: 0;
+    line-height: 1.2;
+}
+
 
 /*pop up thing*/
 .container {
@@ -164,11 +215,22 @@ body.page_4 {
     display: block;
 }
 
+.popup::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: url("assets/popup.jpeg");
+    opacity: 0.4;
+    filter: blur(1px);
+}
+
 .popup {
     font-family: 'Calligraffitti';
     width: 500px;
     height: 400px;
-    background: url("assets/popup.jpeg");
+    background-color: #0a04b1;
     border-radius: 50px;
     position: fixed;
     top: 0%;
@@ -209,5 +271,22 @@ body.page_4 {
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+}
 
+/*Page_5*/
+body.page_::before {
+    display: none;
+}
+
+body.page_5 {
+    background-color: #ffffff;
+}
+
+/*Page_6*/
+body.page_6::before {
+    display: none;
+}
+
+body.page_6 {
+    background-color: #ffffff;
 }
