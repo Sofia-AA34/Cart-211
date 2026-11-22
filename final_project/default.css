@@ -32,8 +32,14 @@ h1 {
     margin-bottom: 20px;
 }
 
-p {
-    font-size: 25px;
+header p {
+    max-width: 1700px;
+    margin: 10px auto;
+    font-size: 23px;
+}
+
+header p:first-of-type {
+    margin-bottom: 40px;
 }
 
 /*Images*/
@@ -89,11 +95,87 @@ p {
 
 /*Page_1*/
 body.page_1::before {
-    display: none;
+    background: url("assets/meditation.jpeg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    filter: blur(5px);
 }
 
 body.page_1 {
-    background-color: #ffffff;
+    background-color: #f5f1fa;
+    color: #0f0c21;
+    font-family: 'Metal';
+}
+
+.page_1 main {
+    max-width: 1700px;
+    margin: -20px auto 0;
+    padding: 0 30px;
+}
+
+.page_1 h1 {
+    font-size: 75px;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.page_1 .first-paragraph {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding: 24px 28px;
+    line-height: 1.2;
+}
+
+.page_1 h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.page_1 .techniques {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.page_1 h3,
+.page_1 h4 {
+    text-align: center;
+    font-size: 30px;
+    height: 60px;
+    margin: 0;
+}
+
+.page_1 .second-paragraph,
+.page_1 .third-paragraph {
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.5;
+    height: 230px;
+    margin: 0 0 10px;
+}
+
+.page_1 .techniques img {
+    display: block;
+    width: 600px;
+    height: 400px;
+    max-width: 100%;
+    object-fit: cover;
+    margin: -30px auto 0;
+}
+
+.page_1 .next-page {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 12px 24px;
+    background-color: #312b50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
 }
 
 /*Page_2*/
@@ -121,7 +203,6 @@ body.page_4::before {
     background-position: center;
     opacity: 0.3;
     filter: blur(3px);
-
 }
 
 body.page_4 {
@@ -161,13 +242,13 @@ body.page_4 {
     left: 0px;
 }
 
-.page_4 main first-paragraph {
+.page_4 main .first-paragraph {
     font-size: 35px;
     margin: 0;
     line-height: 1.2;
 }
 
-.page_4 main second-paragraph {
+.page_4 main .second-paragraph {
     font-size: 35px;
     margin: 0;
     line-height: 1.2;
