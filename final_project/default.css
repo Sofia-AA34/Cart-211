@@ -3,7 +3,7 @@
 body {
     isolation: isolate;
     background-color: #312b50;
-    color: #eeecf3;
+    color: #b098eb;
     font-family: 'Alkatra';
 }
 
@@ -103,7 +103,7 @@ body.page_1::before {
 }
 
 body.page_1 {
-    background-color: #f5f1fa;
+    background-color: #ccb4ea;
     color: #0f0c21;
     font-family: 'Metal';
 }
@@ -161,10 +161,16 @@ body.page_1 {
 .page_1 .techniques img {
     display: block;
     width: 600px;
-    height: 400px;
     max-width: 100%;
     object-fit: cover;
     margin: -30px auto 0;
+}
+
+.page_1 .technique:first-child img {
+    width: auto;
+    height: 610px;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .page_1 .next-page {
@@ -180,20 +186,169 @@ body.page_1 {
 
 /*Page_2*/
 body.page_2::before {
-    display: none;
+    background: url("assets/crowd.jpeg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
 }
 
 body.page_2 {
-    background-color: #ffffff;
+    background-color: #e4dced;
+    color: #180a67;
+    font-family: 'Metal';
+}
+
+.page_2 main {
+    max-width: 1700px;
+    margin: -20px auto 0;
+    padding: 0 30px;
+}
+
+.page_2 h1 {
+    font-size: 75px;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.page_2 .walking {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 200px;
+    margin-left: 200px;
+    width: auto;
+}
+
+.page_2 .image-stacked {
+    position: relative;
+    isolation: isolate;
+}
+
+.page_2 .image-stacked .back-image {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(3px);
+    opacity: 0.7;
+    z-index: -0;
+}
+
+.page_2 .image-stacked .front-image {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+.page_2 .first-paragraph {
+    max-width: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 35px;
+    line-height: 1.2;
+}
+
+.page_2 h2 {
+    text-align: left;
+    font-size: 30px;
+    padding: 15px;
+    position: relative;
+    top: 70px;
+}
+
+.page_2 .second-paragraph {
+    max-width: 700px;
+    text-align: left;
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 0 0 10px;
+}
+
+.page_2 .playlists {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 30px;
+}
+
+.page_2 .music {
+    display: flex;
+    gap: 30px;
+}
+
+.page_2 .music img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.page_2 .next-page {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 12px 24px;
+    background-color: #312b50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
 }
 
 /*Page_3*/
 body.page_3::before {
-    display: none;
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    height: 120vh;
+    background-size: 80 vh 120 vh;
+    background: url("assets/notebook.jpeg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    opacity: 0.8;
+    filter: none;
+    margin-left: 100px;
 }
 
 body.page_3 {
-    background-color: #ffffff;
+    position: relative;
+    min-height: 120vh;
+    background-color: #dabef1;
+    color: #200729;
+    font-family: 'Metal';
+}
+
+.page_3 h1 {
+    text-align: left;
+    margin-left: 350px;
+    font-size: 65px;
+    transform: translateY(40px);
+}
+
+.page_3 .first-paragraph {
+    font-size: 28px;
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+    margin-top: 70px;
+    margin-left: 225px;
+    margin-right: auto;
+    text-align: center;
+}
+
+.page_3 .Journal-Kinds {
+    width: 95%;
+    position: absolute;
+    right: 40px;
+    bottom: 400px;
+    max-width: 1000px;
+    text-align: left;
+    font-size: 32px;
+    line-height: 2;
+    margin: 0;
 }
 
 /*Fourth page*/
