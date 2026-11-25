@@ -456,6 +456,17 @@ body.page_3 {
     }
 }
 
+.page_3 .next-page {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 12px 24px;
+    background-color: #312b50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
 /*Fourth page*/
 body.page_4::before {
     background: url("assets/page4.jpeg");
@@ -612,6 +623,17 @@ body.page_4 {
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.page_4 .next-page {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 12px 24px;
+    background-color: #312b50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
 }
 
 /*Page_5*/
